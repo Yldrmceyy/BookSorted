@@ -34,7 +34,7 @@ public class Main {
         set2.add(new Book(1, "Beyaz Kalp", "Javier Marias", 250, 2016));
         set2.add(new Book(2, "Siddhartha", "Herman Hesse", 150, 2002));
         set2.add(new Book(3, "Walden Gölü", "Henry David Thoreau", 380, 2017));
-        set2.add(new Book(4, "Dorian Gray'in Portresi", "Oscar Wilde", 275, 2002));
+        set2.add(new Book(4, "Dorian Gray'in Portresi", "Oscar Wilde", 270, 2002));
         set2.add(new Book(5, "Cehenneme Övgü", "Gündüz Vassaf", 275, 2000));
 
         // Printing the order of the book according to the number of pages on the screen
