@@ -5,6 +5,7 @@ import java.util.TreeSet;
 public class Main {
     public static void main(String[] args) {
 
+        // Set1: Printing the sorting according to book titles to the screen
         TreeSet<Book> set = new TreeSet<>();
 
         set.add(new Book(1, "Beyaz Kalp", "Javier Marias", 250, 2016));
@@ -18,9 +19,10 @@ public class Main {
                     book.getAuthorName() + "--" + book.getPageNumber() + "--" + book.getPublishDate());
         }
 
-
         System.out.println("#####################################");
 
+
+        //Set2: Printing the order of the book according to the number of pages on the screen
         TreeSet<Book> set2 = new TreeSet<>(new Comparator<Book>() {
             @Override
             public int compare(Book o1, Book o2) {

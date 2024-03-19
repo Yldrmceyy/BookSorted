@@ -3,6 +3,7 @@ public class Book implements Comparable<Book> {
     int ID, publishDate, pageNumber;
     String bookName, authorName;
 
+    //Constructor method of the Book object
     public Book(int ID, String bookName, String authorName, int pageNumber, int publishDate) {
         this.ID = ID;
         this.bookName = bookName;
@@ -11,7 +12,7 @@ public class Book implements Comparable<Book> {
         this.publishDate=publishDate;
 
     }
-
+    // Implementation of the CompareTo method from the Comparable interface to compare books based on the characters of book names.
     @Override
     public int compareTo(Book book) {
         return this.getBookName().compareTo(book.getBookName());
