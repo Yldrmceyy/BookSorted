@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class Main {
     public static void main(String[] args) {
 
-        // Set1: Printing the sorting according to book titles to the screen
+        // Set1:
         TreeSet<Book> set = new TreeSet<>();
 
         set.add(new Book(1, "Beyaz Kalp", "Javier Marias", 250, 2016));
@@ -14,6 +14,7 @@ public class Main {
         set.add(new Book(4, "Dorian Gray'in Portresi", "Oscar Wilde", 275, 2002));
         set.add(new Book(5, "Cehenneme Övgü", "Gündüz Vassaf", 275, 2000));
 
+        //Printing the sorting according to book titles to the screen
         for (Book book : set) {
             System.out.println(book.getID() + "--" + book.getBookName() + "-- " +
                     book.getAuthorName() + "--" + book.getPageNumber() + "--" + book.getPublishDate());
@@ -22,7 +23,7 @@ public class Main {
         System.out.println("#####################################");
 
 
-        //Set2: Printing the order of the book according to the number of pages on the screen
+        //Set2:
         TreeSet<Book> set2 = new TreeSet<>(new Comparator<Book>() {
             @Override
             public int compare(Book o1, Book o2) {
@@ -36,6 +37,7 @@ public class Main {
         set2.add(new Book(4, "Dorian Gray'in Portresi", "Oscar Wilde", 275, 2002));
         set2.add(new Book(5, "Cehenneme Övgü", "Gündüz Vassaf", 275, 2000));
 
+        // Printing the order of the book according to the number of pages on the screen
         for (Book book : set2) {
             System.out.println(book.getID() + "--" + book.getBookName() + "-- " +
                     book.getAuthorName() + "--" + book.getPageNumber() + "--" + book.getPublishDate());
